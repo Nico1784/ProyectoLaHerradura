@@ -49,7 +49,7 @@ body{
 
 .contenedorHeader{
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)) ,
-    url(/asset/img/fondoHerramientas1.png);
+    url(../asset/img/fondoHerramientas1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
@@ -424,8 +424,8 @@ body{
     height: 100%;
     width: 80%;
     margin:0 auto;
-    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)) ,
-    url(/asset/img/fondomaincatalogo.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) ,
+    url(./img/fondomaincatalogo.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
