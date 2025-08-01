@@ -97,6 +97,11 @@ body{
     font-size: 20px;
     padding: 0 5px;
 }
+.header-a:hover{
+    
+  color:rgba(255, 196, 0, 0.993);
+}
+
 
 /****Media Querie: HEADER***/
 
@@ -141,7 +146,6 @@ body{
 
 
 
-
 /****FOOTER****/
 
 .footer{
@@ -170,6 +174,10 @@ body{
     font-weight:100;
     color:rgb(255, 255, 255);
     font-size: 15px;
+}
+.footer-a:hover{
+      
+  color:rgba(255, 196, 0, 0.993);
 }
 
 .footer-contenedor-logo{
@@ -482,15 +490,9 @@ body{
     border: 2px solid rgba(250, 163, 3, 0.897)
 
 }
-/*.portada{
-    height: 80%;
-    width: 25%;
-    background-repeat: no-repeat;
-    background-size:contain;
-    border: 2px solid rgba(250, 163, 3, 0.897);
-}*/
+
 .portada:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 10px 20px rgb(240, 184, 1);
   
 }
@@ -515,9 +517,12 @@ body{
     height: 95%;
     width: 65vw;
     display: flex;
-    column-gap: 4vw;;
-    
-    
+    column-gap: 4vw;
+    }
+    .portada:hover {
+  
+  box-shadow: 0 10px 20px rgb(240, 184, 1);
+  
 }
 
 }
@@ -1005,6 +1010,20 @@ body{
 
 /*Media Querie HerramientasElectricas.html*/
 
-@media (max-width: 768px){
-  
-}
+@media (max-width: 768px) {
+ .contenedorMainProductos{
+   height: auto;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+ .contenedor-tarjetas{
+      width: auto;
+      display: grid;
+      grid-template-areas:
+       "1 2 3"
+       "4 5 6"
+       "7 8 9";
+    }
+   
+};
