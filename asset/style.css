@@ -1088,7 +1088,7 @@ body{
  .contenedor-tarjetas{
     height: auto;
     width: 100%;
-    margin: 7px auto;
+    margin: 7px;
       
    display: grid;
    grid-template-areas:
@@ -1102,7 +1102,12 @@ body{
  }
  .tarjeta{
     height: 50vh;
-    width: 40vw;
+    width: 45vw;
  }
+ .img-tarjeta{
+    height: 35%;
+    width: 45%;
+}
+
  
 }
