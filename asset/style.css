@@ -59,8 +59,8 @@ body{
    
     display: flex;
     justify-content:space-between;
-    
     align-items: center;
+ 
     border-bottom: 0.5px solid rgb(95, 92, 92) ;
     
 }
@@ -80,9 +80,10 @@ body{
 }
 .logo-Text{
     color:white;
-    font-size: 24px;
+    font-size: 22px;
     font-family: "Arvo";
     font-weight: 500;
+    margin: 0;
    
     
 }
@@ -94,12 +95,13 @@ body{
     font-family: "Arvo";
     font-weight:100;
     color:rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 5px;
 }
 .header-a:hover{
     
   color:rgba(255, 196, 0, 0.993);
+  background-color: rgb(59, 41, 1);
 }
 
 
@@ -108,38 +110,70 @@ body{
 @media (max-width: 768px)  {
 
     .contenedorHeader{
-        align-items: center;
-        height: 20vh;
+        height: 18vh;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-template-rows: repeat(2,1fr);
+        
+        
+        
     }
     .logo-header{
-        width:40vw;
+        height: 100%;
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        
+        flex-direction: row;
+        width:100%;
+
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+       
+       
+        
     }
     .logo-imagen{
         height: 8vh;
-        width:10vw;
+        width:30%;
     }
     .logo-Text{
-     font-size: 15px;
-     text-align: center;
+        height: 100%; 
+        width: 70%;
+        font-size: 18px;
+    
+        
+       
+        
+
+     
     }
     .contenedorHeader nav{
-       display: flex;
-       flex-wrap: wrap;
-       width: 28vw;
-       justify-content: center;
-       
+        grid-row: 2/3;
+        grid-column: 1/4;
+        text-align: center;
        
     }
     .contenedorHeader h1{
-        font-size: 20px;
+
+        grid-column: 3/4;
+        grid-row: 1/2;
+       
+        height: auto;
+        width: 100%;
+       
+        font-size: 14px;
         text-align: center;
+        justify-content: center;
+
     }
     .header-a{
-    font-size: 14px;
+    font-size: 15px;
     }
     
-
-
 }
     
 
@@ -908,7 +942,7 @@ body{
 
 }
 
-/******HerramientasElectricas.HTML********/
+/******Herramientas.HTML********/
 
 /*MAIN */
 
@@ -965,7 +999,7 @@ body{
     font-weight: bold;
     font-size:70%;
     text-align: center;
-    border-bottom: 2px  solid rgb(224, 224, 224);
+    border-bottom: 2px  solid rgb(184, 184, 184);
     padding: 5px 0;
 }
 
@@ -977,7 +1011,7 @@ body{
 }
 
 .tarjeta-descripcion{
-    border-top: 2px  solid rgb(224, 224, 224);
+    border-top: 2px  solid rgb(184, 184, 184);
     padding: 10px 0;
     font-weight: bold;
     font-size: 75%;  
@@ -1038,7 +1072,7 @@ body{
 };
 
 
-/*Media Querie HerramientasElectricas.html*/
+/*Media Querie Herramientas.html*/
 
 @media (max-width: 768px) {
  .contenedorMainProductos{
@@ -1048,12 +1082,12 @@ body{
   }
 
  .contenedor-tarjetas{
-      width: auto;
-      display: grid;
+      
       grid-template-areas:
        "1 2 3"
        "4 5 6"
-       "7 8 9";
+       "7 8 9"
+       "10 11 12";
     }
    
 };
