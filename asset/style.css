@@ -944,7 +944,10 @@ body{
 
 }
 
-/******Herramientas.HTML********/
+
+
+
+/******Herramientas (Manuales y Electricas).HTML********/
 
 /*MAIN */
 
@@ -988,6 +991,7 @@ body{
    padding: 3px;
    background: white;
    box-shadow: 0 4px 10px rgba(87, 86, 86, 0.8);
+  
 }
 
 .tarjeta:hover {
@@ -998,8 +1002,8 @@ body{
 .titulo-tarjeta{
     text-transform: uppercase;
     font-family:sans-serif;
-    font-weight: bold;
-    font-size:70%;
+    font-weight:900;
+    font-size:80%;
     text-align: center;
     border-bottom: 2px  solid rgb(184, 184, 184);
     padding: 5px 0;
@@ -1016,8 +1020,8 @@ body{
     border-top: 2px  solid rgb(184, 184, 184);
     padding: 10px 0;
     font-weight: bold;
-    font-size: 75%;  
-    color: rgb(85, 84, 84);
+    font-size: 80%;  
+    color: rgb(66, 66, 66);
     padding: 5px 0;
     text-align: center;
     
@@ -1063,33 +1067,40 @@ body{
 .producto10{
     grid-area: "10";
 
-};
+}
 .producto11{
     grid-area: "11";
 
-};
+}
 .producto12{
     grid-area: "12";
 
-};
+}
 
 
 /*Media Querie Herramientas.html*/
 
 @media (max-width: 768px) {
- .contenedorMainProductos{
-   height: auto;
-    width: 60%;
-    margin: 0 auto;
-  }
+ 
 
  .contenedor-tarjetas{
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
       
-      grid-template-areas:
-       "1 2 3"
-       "4 5 6"
-       "7 8 9"
-       "10 11 12";
-    }
-   
-};
+   display: grid;
+   grid-template-areas:
+   "1 2"
+   "3 4"
+   "5 6"
+   "7 8"
+   "9 10"
+   "11 12";
+    row-gap: 10px;
+ }
+ .tarjeta{
+    height: 45vh;
+    width: 30vw;
+ }
+ 
+}
