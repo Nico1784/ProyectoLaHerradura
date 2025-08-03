@@ -1081,12 +1081,14 @@ body{
 /*Media Querie Herramientas.html*/
 
 @media (max-width: 768px) {
- 
+  .contenedorMainProductos{
+    width: auto;
+}
 
  .contenedor-tarjetas{
     height: auto;
     width: 100%;
-    margin: 10px auto;
+    margin: 7px auto;
       
    display: grid;
    grid-template-areas:
@@ -1099,8 +1101,8 @@ body{
     row-gap: 10px;
  }
  .tarjeta{
-    height: 45vh;
-    width: 30vw;
+    height: 50vh;
+    width: 40vw;
  }
  
 }
