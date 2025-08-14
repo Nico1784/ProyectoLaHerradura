@@ -123,6 +123,8 @@ body{
         align-items: center;
         justify-content: center;
         
+        
+        
     }
     .logo-header{
         height: 100%;
@@ -219,7 +221,7 @@ body{
   color:rgba(255, 196, 0, 0.993);
 }
 
-.contenedor-logo{
+.footer-contenedor-logo{
     width: 25%;
     display: flex;
     justify-content: space-evenly;
