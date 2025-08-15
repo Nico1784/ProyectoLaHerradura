@@ -1,0 +1,146 @@
+@use "variables" as v;
+
+.contenedorMainProductos{
+   height: auto;
+    width: 90%;
+    margin: 0 auto;
+
+    .contenedor-tarjetas{
+            height: auto;
+            width: 80%;
+            margin: 8px auto;
+    
+            background: linear-gradient( rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.6)) ,
+            url(../asset/img/FondoMadera2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+        
+            display: grid;
+            grid-template-areas:
+            "1 2 3 4"
+            "5 6 7 8"
+            "9 10 11 12";
+            justify-content:space-evenly;
+            row-gap: 15px;
+
+            .producto1{
+                 grid-area: "1";
+                 @extend %tarjeta;
+            }
+            .producto2{
+                grid-area: "2";
+                @extend %tarjeta;
+            }
+            .producto3{
+                grid-area: "3";
+                @extend %tarjeta;
+            }
+            .producto4{
+                grid-area: "4";
+                @extend %tarjeta;
+            }
+
+            
+            .producto5{
+                grid-area: "5";
+                @extend %tarjeta;
+            }
+
+            
+            .producto6{
+                grid-area: "6";
+                @extend %tarjeta;
+
+            }
+            .producto7{
+                grid-area: "7";
+                @extend %tarjeta;
+
+            }
+            .producto8{
+                grid-area: "8";
+                @extend %tarjeta;
+
+            }
+            .producto9{
+                grid-area: "9";
+                @extend %tarjeta;
+
+            }
+            .producto10{
+                grid-area: "10";
+                @extend %tarjeta;
+
+            }
+            .producto11{
+                grid-area: "11";
+                @extend %tarjeta;
+
+            }
+            .producto12{
+                grid-area: "12";
+                @extend %tarjeta;
+
+            }
+
+        }
+
+    }
+@include v.mobile{
+
+ .contenedorMainProductos{
+          width: auto;
+
+          .contenedor-tarjetas{
+                height: auto;
+                width: 100%;
+                margin: 7px;
+                
+                display: grid;
+                grid-template-areas:
+                "1 2"
+                "3 4"
+                "5 6"
+                "7 8"
+                "9 10"
+                "11 12";
+                row-gap: 10px;
+
+               .tarjeta{
+                    height: 50vh;
+                    width: 40vw;
+                    .titulo-tarjeta{
+                        font-size: 12px;
+                    }
+                    .img-tarjeta{
+                        height: 50%;
+                        width:90%
+                        }
+                    .tarjeta-descripcion{
+                        font-size: 12px;
+
+                    }    
+                }
+
+            }
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
