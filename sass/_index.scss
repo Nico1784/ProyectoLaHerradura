@@ -16,8 +16,8 @@
         padding-top: 30px;
 
         .s1{
-            height:100%;
-            width:80%;
+            height:auto;
+            width:70%;
             display:flex;
             flex-direction: column;
             justify-content: center;
@@ -32,7 +32,7 @@
                 width: 70%;
                 color:v.$colorprincipal;
                 font-family: v.$fuente;
-                font-size: 30px;
+                font-size: 32px;
                 text-align: justify;
                 margin-top: 12px;
                 width: 75%;
@@ -41,7 +41,7 @@
         } /*Final class s1*/
 
         .s2{
-            height:90%;
+            height:auto;
             width:50%;
 
             display: flex;
@@ -66,7 +66,6 @@
                  
             }
 
-           
 
             .slide{ 
                     height:50vh;
@@ -94,7 +93,7 @@
                                  color:v.$colorprincipal;
                                  text-transform: uppercase;
                                  font-weight: 400;
-                                 font-size: 35px;
+                                 font-size: 28px;
                                  text-align: center;
                                 }
                            } 
@@ -154,14 +153,14 @@
                }
             
                .slide{
-                     height: 50vh;
+                     height: 45vh;
                      width: 70vw;
                      margin-top: 2vh;;
 
                      .carousel-inner .carousel-item{
                                 img{
-                                height:auto ;
-                                width:50vw;
+                                height:35vh ;
+                                width:45vw;
                                 background-repeat: no-repeat;
                                 text-align: center;
                                  }

@@ -254,8 +254,8 @@ body {
   /*Final class s2*/
 }
 .contenedor-index .s1 {
-  height: 100%;
-  width: 80%;
+  height: auto;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,13 +270,13 @@ body {
   width: 70%;
   color: rgb(236, 225, 225);
   font-family: "Arvo";
-  font-size: 30px;
+  font-size: 32px;
   text-align: justify;
   margin-top: 12px;
   width: 75%;
 }
 .contenedor-index .s2 {
-  height: 90%;
+  height: auto;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -316,7 +316,7 @@ body {
   color: rgb(236, 225, 225);
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -361,13 +361,13 @@ body {
     animation-iteration-count: 4;
   }
   .contenedor-index .s2 .slide {
-    height: 50vh;
+    height: 45vh;
     width: 70vw;
     margin-top: 2vh;
   }
   .contenedor-index .s2 .slide .carousel-inner .carousel-item img {
-    height: auto;
-    width: 50vw;
+    height: 35vh;
+    width: 45vw;
     background-repeat: no-repeat;
     text-align: center;
   }
