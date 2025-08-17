@@ -10,9 +10,8 @@
     list-style: none;
     margin:0;
     padding:0;
+
 }
-
-
 
 
 //Variables globales
@@ -51,8 +50,11 @@ body{
   box-shadow: 0 4px 10px rgba(87, 86, 86, 0.8);
 
   &:hover {
-    transform: scale(1.05);
-    background-color: #f1f1f1;
+    transform: scale(1.04);
+   /* background-color: #f1f1f1;*/
+    box-shadow: 0 20px 20px rgb(240, 184, 1);
+                
+
   }
 
   .titulo-tarjeta {
@@ -74,12 +76,14 @@ body{
   .tarjeta-descripcion {
     border-top: 2px solid rgb(184, 184, 184);
     padding: 5px 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 25px;
     font-family:$fuente;
-    color: rgb(54, 54, 54);
+    color: rgb(14, 13, 13);
     text-align: center;
   }
 }
+
+
 
 

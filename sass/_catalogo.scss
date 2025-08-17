@@ -33,22 +33,27 @@
 
              grid-row: 1/2;
              grid-column: 1/4;
+       
+             display: inline-block;
+             margin: 0 0.5rem;
+             animation: backInLeft; 
+             animation-duration: 1s;
             }
 
         .contenedor-portada{
              grid-column: 1/4;
              grid-row:2/3;
             
-             height: 75%;
-             width: 48%;
+             height: 55vh;
+             width: 48vw;
             
              display: flex;
              justify-content:space-between;
              align-items: stretch;
             
             .portada{
-                height:30% ;
-                width: 25%;
+                height:30vh ;
+                width: 25vw;
                 all: unset;
                 cursor: pointer;
 
@@ -65,7 +70,6 @@
                         border: 2px solid rgba(250, 163, 3, 0.897)
                     }
             }
-
         }
     }
 }
@@ -84,14 +88,14 @@
                  }
 
             .portada{
-                height: 80%;
-                width: 50%;
+                height: 60vh;
+                width: 50vw;
             }
 
             .contenedor-portada{
                 grid-column: 1/4;
                 grid-row:2/3;
-                height: 95%;
+                height: 30vh;
                 width: 65vw;
                 display: flex;
                 column-gap: 4vw;
