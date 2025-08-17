@@ -104,7 +104,7 @@ body {
   background-color: rgb(59, 41, 1);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .contenedor-header {
     height: 20vh;
     width: auto;
@@ -200,7 +200,7 @@ body {
   padding: 11px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .footer {
     height: 14vh;
     display: grid;
@@ -321,7 +321,7 @@ body {
 }
 
 /*Final contenedor-index*/
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .contenedor-index {
     height: auto;
     flex-direction: column;
@@ -433,7 +433,7 @@ body {
   border: 2px solid rgba(250, 163, 3, 0.897);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .main-catalogo {
     height: 80vh;
   }
@@ -508,7 +508,7 @@ body {
   margin-top: 15px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .main-contacto .contenedorForm {
     height: 80vh;
     width: 70vw;
@@ -597,7 +597,7 @@ body {
   grid-row: 6/7;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .main-proveedores {
     font-weight: 60px;
     font-size: 25px;
@@ -675,7 +675,7 @@ body {
   border: 3px solid rgb(95, 92, 92);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .main-nosotros {
     height: auto;
     flex-direction: column;
@@ -780,7 +780,7 @@ body {
   grid-area: "12";
 }
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .contenedorMainProductos {
     width: auto;
   }
