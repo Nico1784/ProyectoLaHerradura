@@ -7,7 +7,7 @@
 
     .contenedor-tarjetas{
             height: auto;
-            width: 80%;
+            width: 90%;
             margin: 8px auto;
     
             background: linear-gradient( rgba(0, 0, 0, 0.2),
@@ -41,14 +41,10 @@
                 grid-area: "4";
                 @extend %tarjeta;
             }
-
-            
             .producto5{
                 grid-area: "5";
                 @extend %tarjeta;
             }
-
-            
             .producto6{
                 grid-area: "6";
                 @extend %tarjeta;
@@ -109,17 +105,18 @@
                 row-gap: 10px;
 
                .tarjeta{
-                    height: 50vh;
-                    width: 40vw;
+                    height: 40vh;
+                    width: 45vw;
                     .titulo-tarjeta{
                         font-size: 12px;
                     }
                     .img-tarjeta{
-                        height: 50%;
-                        width:90%
+                        height: 60%;
+                        width:70%;
                         }
                     .tarjeta-descripcion{
                         font-size: 12px;
+                        width: auto;
 
                     }    
                 }
@@ -132,6 +129,56 @@
 
 }
 
+@include v.tablet{
+
+     .contenedorMainProductos{
+          width: auto;
+
+          .contenedor-tarjetas{
+                height: auto;
+                width: 100%;
+                margin: 7px;
+                
+                display: grid;
+                grid-template-areas:
+                "1 2"
+                "3 4"
+                "5 6"
+                "7 8"
+                "9 10"
+                "11 12";
+                row-gap: 10px;
+
+               .tarjeta{
+                    height: 55vh;
+                    width: 30vw;
+                    .titulo-tarjeta{
+                        font-size: 14px;
+                    }
+                    .img-tarjeta{
+                        height: 60%;
+                        width:auto;
+                        }
+                    .tarjeta-descripcion{
+                        font-size: 14px;
+                        width: auto;
+
+                    }    
+                }
+
+            }
+
+
+    }
+
+       
+
+
+
+
+
+
+}
 
 
 

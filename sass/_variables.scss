@@ -21,8 +21,6 @@ $colorprincipal: rgba(236, 225, 225,1);
 $bg-body:  rgb(0, 0, 0);
 
 
-
-
 body{
     background-color: $bg-body;
 }
@@ -31,15 +29,29 @@ body{
 
 @mixin mobile{
     @media(max-width: 768px) {
-        @content
+        @content;
     }
 }
 
 
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+
+
 
 %tarjeta {
-  height: 45vh;
-  width: 12vw;
+  height: 55vh;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -61,7 +73,7 @@ body{
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 800;
-    font-size: 22px;
+    font-size: 14px;
     font-family:$fuente;
     text-align: center;
     border-bottom: 2px solid rgb(184, 184, 184);
@@ -76,11 +88,15 @@ body{
   .tarjeta-descripcion {
     border-top: 2px solid rgb(184, 184, 184);
     padding: 5px 0;
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 14px;
     font-family:$fuente;
     color: rgb(14, 13, 13);
+    padding: 5px;
+    
+    
     text-align: center;
+
   }
 }
 

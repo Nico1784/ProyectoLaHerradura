@@ -7,11 +7,11 @@
       background-size: cover;
       background-position: left center;
 
-      height: 15vh;
+      height: 18vh;
       width: auto;
 
       display: flex;
-      justify-content:space-between;
+      justify-content: space-between;
       align-items: center;
       border-bottom: 0.5px solid rgb(95, 92, 92) ;
 
@@ -28,7 +28,7 @@
 
                 p{
                      color: v.$colorprincipal;
-                     font-size: 30px;
+                     font-size: 20px;
                      font-family: v.$fuente;
                      font-weight: 400;
                      margin: 0;
@@ -38,20 +38,20 @@
          h1{
             font-family: v.$fuente;
             font-weight: 250;
-            font-size: 30px;
+            font-size: 25px;
             color:v.$colorprincipal;
             margin:0;
             text-align: center;
          }
                 
 
-         a{
+         nav a{
             text-decoration: none;
             font-family: v.$fuente;
             font-weight:100;
             color: v.$colorprincipal;
-            font-size: 25px;
-            padding: 0 15px;
+            font-size: 20px;
+            padding: 0 8px;
          }
 
          a:hover{
@@ -100,35 +100,59 @@
          }   
           
         nav{
-             width: auto;
+            width: auto;
             grid-row: 2/3;
             grid-column: 1/4;
             text-align: center;
             justify-content: space-around;
             
-         }
-         a{
-           font-size: 15px;
-           font-weight: 400;
-           padding: 0;
-           margin: 4px
          
-           
+            a{
+               font-size: 15px;
+               font-weight: 400;
+               padding: 0;
+               margin: 4px
           }
+         }
 
         h1{
             grid-column: 3/4;
             grid-row: 1/2;
-         
-            
-           
-            
+
             font-size: 18px;
             text-align: center;
             justify-content: center;
          }
       }
    }
+
+@include v.tablet{
+
+   .contenedor-header{
+      height: 18vh;
+
+      .logo img{
+                height: 8vh;
+                 width: 10vw;
+               }
+      .logo p{
+              font-size: 15px;
+              font-weight: 200;
+            }
+      h1{
+            font-size: 18px;
+         }
+      nav a{
+            font-size: 12px;
+            padding: 0 4px;
+         }
+
+         
+    }
+    
+
+}
+
    
 
   

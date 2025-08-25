@@ -1,9 +1,10 @@
 @use "variables" as v;
 
 .contenedor-index{
-        height: 100vh;
+        height: auto;
         width: 95%;
         margin:auto;
+
         background: linear-gradient( rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.6)) ,
         url(../asset/img/FondoMadera2.jpg);
@@ -13,29 +14,32 @@
         display:flex;
         flex-direction: row;
         
-        padding-top: 30px;
+        padding-top: 10px;
 
         .s1{
-            height:auto;
+            height:90%;
             width:70%;
+            
             display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             img{
-                 height: 45%;
+                 height: 50%;
                  width: 50%;
                  margin-bottom: 15px;
             }
             p{  
-                width: 70%;
+                height: 50%;
+                width: 50%;
+                
                 color:v.$colorprincipal;
                 font-family: v.$fuente;
-                font-size: 32px;
-                text-align: justify;
-                margin-top: 12px;
-                width: 75%;
+                font-size: px;
+                text-align:left;
+                margin-top: 8px;
+                
             }
 
         } /*Final class s1*/
@@ -46,15 +50,18 @@
 
             display: flex;
             flex-direction: column;
-
+            
+            
+            align-items: center;
             justify-content: center;
-            align-items:  center;
-            row-gap: 1px;
+            margin-right: 15px;
+            
+           
 
             h2{
                  font-family: v.$fuente;
-                 font-weight: bold;
-                 font-size: 55px;
+                 font-weight: 500;
+                 font-size: 28px;
                  color:v.$colorprincipal;
 
                  display: inline-block;
@@ -68,11 +75,12 @@
 
 
             .slide{ 
-                    height:50vh;
-                    width: 30vw;
-                    margin: 5px auto;
+                    height:auto;
+                    width: auto;
+                    margin: 10px auto;
                     background: linear-gradient(rgb(0, 0,0, 0.6),
                     rgb(0, 0, 0,0.8));
+
                     text-align: center;
                     align-items: center;
                     
@@ -93,7 +101,7 @@
                                  color:v.$colorprincipal;
                                  text-transform: uppercase;
                                  font-weight: 400;
-                                 font-size: 28px;
+                                 font-size: 18px;
                                  text-align: center;
                                 }
                            } 
@@ -125,7 +133,7 @@
 
             img{
                 height: 35%;
-                width: 60vw;
+                width: 50%;
             }
             p{
                width: 80%;
@@ -143,6 +151,7 @@
              flex-direction: column;
              justify-content: center;
              text-align: center;
+             margin:0;
 
              h2{
                  font-size:18px;
@@ -154,13 +163,13 @@
             
                .slide{
                      height: 45vh;
-                     width: 70vw;
+                     width: auto;
                      margin-top: 2vh;;
 
                      .carousel-inner .carousel-item{
                                 img{
                                 height:35vh ;
-                                width:45vw;
+                                width:auto;
                                 background-repeat: no-repeat;
                                 text-align: center;
                                  }
@@ -177,3 +186,5 @@
 
 
 }
+
+
