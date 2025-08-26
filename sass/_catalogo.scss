@@ -2,13 +2,8 @@
 
 
 .main-catalogo{
-    height: 100vh;
-    width: auto;
-
-
-    .catalogo{
-        height: 100%;
-        width: 80%;
+        height: 80%;
+        width: 90%;
         margin:0 auto;
         background: linear-gradient( rgba(0, 0, 0, 0.7),
          rgba(0, 0, 0, 0.4)),
@@ -25,11 +20,70 @@
         justify-items: center;
         align-items:center;
 
-        h2{ 
+
+      h2{ 
              font-family: v.$fuente;
-             font-weight: 600;
-             font-size: 30px;
+             font-weight: 550;
+             font-size: 35px;
              color:v.$colorprincipal;
+
+             grid-row: 1/2;
+             grid-column: 1/4;
+       
+             display: inline-block;
+             margin: 0 0.5rem;
+             animation: backInLeft; 
+             animation-duration: 1s;
+            }
+
+
+   
+
+        .contenedor-portada{
+             grid-column: 1/4;
+             grid-row:2/3;
+             column-gap: 30px;
+            
+             height: 75vh;
+             width: 45vw;
+            
+             display: flex;
+             justify-content:space-evenly;
+             align-items: center;
+             
+            
+            .portada{
+                height:60vh;
+                width: 55vw;
+                cursor: pointer;
+                text-align: center;
+                :hover{
+                    transform: scale(1.02);
+                    box-shadow: 0 20px 20px rgb(240, 184, 1);
+                }
+
+                .img-portada{
+                        height: 100%;
+                        width: 100%;
+                        background-repeat: no-repeat;
+                        background-size:cover;
+                        border: 2px solid rgba(250, 163, 3, 0.897)
+                    }
+            }
+        }
+    }
+
+
+
+@include v.mobile{
+
+   .main-catalogo{
+        height: auto;
+        width: 90%;
+
+      h2{ 
+             font-weight: 500;
+             font-size: 20px;
 
              grid-row: 1/2;
              grid-column: 1/4;
@@ -43,66 +97,51 @@
         .contenedor-portada{
              grid-column: 1/4;
              grid-row:2/3;
-             column-gap: 18px;
+             column-gap: 15px;
             
-             height: 55vh;
-             width: 48vw;
+             height: 45vh;
+             width: 80vw;
             
-             display: flex;
-             justify-content:space-evenly;
-             align-items: stretch;
+             
             
             .portada{
-                height:30vh;
-                width: 25vw;
-                all: unset;
+                height:100%;
+                width: 100%;
                 cursor: pointer;
-
+                text-align: center;
                 :hover{
                     transform: scale(1.02);
                     box-shadow: 0 20px 20px rgb(240, 184, 1);
                 }
 
                 .img-portada{
-                        height: 80%;
-                        width: 100%;
-                        background-repeat: no-repeat;
-                        background-size:cover;
-                        border: 2px solid rgba(250, 163, 3, 0.897)
+                        height: 100%;
+                        width: 80%;
                     }
             }
         }
     }
+
+
 }
 
+@include v.tablet{
 
-@include v.mobile{
+     .main-catalogo .catalogo .contenedor-portada .portada {
+              height: auto;
+              width:auto;
+     
+     
+     
+                .img-portada {
+                     
 
-   .main-catalogo{
-
-     height: 80vh;
-
-     .catalogo{
-
-            h2{
-                 font-size: 25px;
-                 }
-
-            .portada{
-                height: 60vh;
-                width: 50vw;
+                    height: 90%;
+                    width: 70%;
+                }
             }
+             
+            
 
-            .contenedor-portada{
-                grid-column: 1/4;
-                grid-row:2/3;
-                height: 30vh;
-                width: 65vw;
-                display: flex;
-                column-gap: 4vw;
-            }
-        }
-    }
-
-
+           
 }
