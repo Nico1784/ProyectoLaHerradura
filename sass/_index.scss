@@ -75,8 +75,8 @@
 
 
             .slide{ 
-                    height:auto;
-                    width: auto;
+                    height:40%;
+                    width: 60%;
                     margin: 10px auto;
                     background: linear-gradient(rgb(0, 0,0, 0.6),
                     rgb(0, 0, 0,0.8));
@@ -101,7 +101,7 @@
                                  color:v.$colorprincipal;
                                  text-transform: uppercase;
                                  font-weight: 400;
-                                 font-size: 18px;
+                                 font-size: 12px;
                                  text-align: center;
                                 }
                            } 

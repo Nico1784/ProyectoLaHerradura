@@ -2,7 +2,7 @@
 
 
 .footer{
-    height:auto;
+    
     width: auto;
     background-color: black;
     display: flex;
@@ -13,7 +13,7 @@
 
     p{
     font-family: v.$fuente;
-    font-size: 20px;;
+    font-size: 15px;;
     text-align: center;
     margin: 0;
     color: v.$colorprincipal;
@@ -34,7 +34,7 @@
             font-family: v.$fuente;
             font-weight:100;
             color:v.$colorprincipal;
-            font-size: 20px;
+            font-size: 15px;
          }
         a:hover{
               color:rgba(255, 196, 0, 0.993);
@@ -48,12 +48,12 @@
           justify-content: space-around;
 
           .logo-redes{
-                height: 8vh;
+                height: 6vh;
                 width: auto;
                 background-size: cover;
 
                 display: flex;
-                padding: 8px;
+                padding: 9px;
                }
          }  
 

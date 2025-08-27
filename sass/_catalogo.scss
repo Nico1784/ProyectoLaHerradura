@@ -127,17 +127,15 @@
 
 @include v.tablet{
 
-     .main-catalogo .catalogo .contenedor-portada .portada {
+     .main-catalogo.catalogo.contenedor-portada.portada {
               height: auto;
               width:auto;
      
      
      
                 .img-portada {
-                     
-
                     height: 90%;
-                    width: 70%;
+                    width: 75%;
                 }
             }
              

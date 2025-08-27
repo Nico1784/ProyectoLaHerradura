@@ -2,13 +2,14 @@
 
 .contenedorMainProductos{
    height: auto;
-    width: 90%;
-    margin: 0 auto;
+    width: 95vw;
+    margin: auto;
+
 
     .contenedor-tarjetas{
             height: auto;
             width: 90%;
-            margin: 8px auto;
+            margin: 20px auto;
     
             background: linear-gradient( rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.6)) ,
@@ -91,8 +92,8 @@
 
           .contenedor-tarjetas{
                 height: auto;
-                width: 100%;
-                margin: 7px;
+                width: 95%;
+                margin: 15px;
                 
                 display: grid;
                 grid-template-areas:
@@ -105,8 +106,8 @@
                 row-gap: 10px;
 
                .tarjeta{
-                    height: 40vh;
-                    width: 45vw;
+                    height: 55vh;
+                    width: 40vw;
                     .titulo-tarjeta{
                         font-size: 12px;
                     }
@@ -125,19 +126,18 @@
 
 
     }
-
-
 }
 
 @include v.tablet{
 
      .contenedorMainProductos{
-          width: auto;
+          width: 95%;
+          margin: 10px 0;
 
           .contenedor-tarjetas{
                 height: auto;
                 width: 100%;
-                margin: 7px;
+                
                 
                 display: grid;
                 grid-template-areas:
@@ -150,14 +150,14 @@
                 row-gap: 10px;
 
                .tarjeta{
-                    height: 55vh;
-                    width: 30vw;
+                    height: 65vh;
+                    width: 35vw;
                     .titulo-tarjeta{
                         font-size: 14px;
                     }
                     .img-tarjeta{
-                        height: 60%;
-                        width:auto;
+                        height: 50%;
+                        width:95%;
                         }
                     .tarjeta-descripcion{
                         font-size: 14px;
