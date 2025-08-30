@@ -54,7 +54,36 @@ body {
   padding: 5px;
   text-align: center;
 }
+.contenedorMainProductos .contenedor-tarjetas .producto1:hover, .contenedorMainProductos .contenedor-tarjetas .producto2:hover, .contenedorMainProductos .contenedor-tarjetas .producto3:hover, .contenedorMainProductos .contenedor-tarjetas .producto4:hover, .contenedorMainProductos .contenedor-tarjetas .producto5:hover, .contenedorMainProductos .contenedor-tarjetas .producto6:hover, .contenedorMainProductos .contenedor-tarjetas .producto7:hover, .contenedorMainProductos .contenedor-tarjetas .producto8:hover, .contenedorMainProductos .contenedor-tarjetas .producto9:hover, .contenedorMainProductos .contenedor-tarjetas .producto10:hover, .contenedorMainProductos .contenedor-tarjetas .producto11:hover, .contenedorMainProductos .contenedor-tarjetas .producto12:hover {
+  animation: bigger 0.4s ease-in forwards;
+}
 
+@keyframes vibrate {
+  0% {
+    transform: translatey(10px);
+  }
+  25% {
+    transform: translatey(-10px);
+  }
+  75% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: trnaslatey(0px);
+  }
+}
+.vibrate {
+  animation: vibrate 1.2s infinite;
+}
+
+@keyframes bigger {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
 .contenedor-header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../asset/img/fondoHerramientas1.png);
   background-repeat: no-repeat;
@@ -194,9 +223,9 @@ body {
 }
 .footer nav {
   height: auto;
-  width: 50%;
+  width: 45%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .footer nav a {
@@ -210,12 +239,12 @@ body {
   color: rgba(255, 196, 0, 0.993);
 }
 .footer .contenedor-redes {
-  width: 25%;
+  width: 45%;
   display: flex;
   justify-content: space-around;
 }
 .footer .contenedor-redes .logo-redes {
-  height: 6vh;
+  height: 8vh;
   width: auto;
   background-size: cover;
   display: flex;
@@ -254,7 +283,7 @@ body {
     grid-row: 2/3;
     grid-column: 3/5;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
   }
   .footer .contenedor-redes .logo-redes {
@@ -273,9 +302,9 @@ body {
     font-size: 14px;
   }
   .footer .contenedor-redes {
-    width: 50%;
+    width: 30%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .footer .contenedor-redes .logo-redes {
     height: 6vh;
@@ -520,53 +549,50 @@ body {
     width: 75%;
   }
 }
-.main-contacto .contenedorForm {
-  height: 90vh;
-  width: 70vw;
-  margin: 0 auto;
+.main-contacto {
+  height: auto;
+  width: 90vw;
+  margin: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../asset/img/FondoContacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
-.main-contacto .contenedorForm form {
-  height: 100%;
-  width: 100%;
-  color: rgb(236, 225, 225);
+.main-contacto form {
+  height: auto;
+  width: auto;
+  margin-top: 25px;
+  align-items: left;
   font-family: "Arvo";
-  font-size: 45px;
-  font-weight: 500;
-  grid-column: 2/3;
-  grid-row: 2/5;
+  color: rgb(236, 225, 225);
+  grid-column: 2/5;
+  grid-row: 1/4;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.main-contacto .contenedorForm form .inputText {
-  height: 5vh;
-  width: 40vw;
-  font-size: 18px;
-  font-family: "Arvo";
-  font-weight: bold;
-}
-.main-contacto .contenedorForm form .textArea {
-  height: 15vh;
-  width: 40vw;
-  font-size: 18px;
-  font-family: "Arvo";
-  font-weight: bold;
-}
-.main-contacto .contenedorForm form .label {
+.main-contacto form .inputText {
+  height: 8vh;
+  width: 45vw;
   font-size: 20px;
-  width: auto;
+  font-weight: bold;
+}
+.main-contacto form .label {
+  font-size: 25px;
   font-weight: 400;
 }
-.main-contacto .contenedorForm form .boton {
-  height: 7vh;
-  width: 40vw;
+.main-contacto form .textArea {
+  height: 15vh;
+  width: 45vw;
+  font-size: 18px;
+  font-family: "Arvo";
+  font-weight: bold;
+}
+.main-contacto form .boton {
+  height: 8vh;
+  width: 45vw;
   background-color: black;
   color: rgb(236, 225, 225);
   font-family: "Arvo";
@@ -575,31 +601,118 @@ body {
   border-radius: 50px;
   margin-top: 15px;
 }
+.main-contacto section {
+  grid-row: 5/4;
+  grid-column: 1/6;
+  margin-top: 25px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-contacto section .marca-tamaño {
+  height: 14vh;
+  width: 8vw;
+}
+.main-contacto section h2 {
+  color: rgb(236, 225, 225);
+  font-family: "Arvo";
+  font-weight: 500;
+  font-size: 25px;
+}
 
 @media (max-width: 768px) {
-  .main-contacto .contenedorForm {
-    height: 80vh;
-    width: 70vw;
+  .main-contacto {
+    height: auto;
+    width: 100vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
-  .main-contacto .contenedorForm form {
-    font-size: 18px;
-    font-weight: 300;
+  .main-contacto form {
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: column;
   }
-  .main-contacto .contenedorForm form .inputText {
-    height: 5vh;
-    width: 50vw;
-    font-size: 20px;
-  }
-  .main-contacto .contenedorForm form .textArea {
-    height: 15vh;
-    width: 50vw;
-    font-size: 20px;
-  }
-  .main-contacto .contenedorForm form .boton {
+  .main-contacto form .inputText {
     height: 6vh;
-    width: 50vw;
-    font-size: 10px;
-    margin-top: 8px;
+    width: 55vw;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .main-contacto form .label {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .main-contacto form .textArea {
+    height: 15vh;
+    width: 55vw;
+    font-size: 18px;
+  }
+  .main-contacto form .boton {
+    height: 8vh;
+    width: 55vw;
+    font-size: 12px;
+  }
+  .main-contacto section {
+    grid-row: 4/6;
+    grid-column: 1/6;
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .main-contacto section .marca-tamaño {
+    height: 14vh;
+    width: 12vw;
+  }
+  .main-contacto section .marca1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    justify-content: center;
+  }
+  .main-contacto section .marca2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .main-contacto section .marca3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .main-contacto section .marca4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .main-contacto section .marca5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .main-contacto section .marca6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .main-contacto section .marca7 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .main-contacto section .marca8 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .main-contacto section h2 {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
   }
 }
 .main-proveedores {

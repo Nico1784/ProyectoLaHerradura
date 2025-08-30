@@ -24,9 +24,9 @@
 
     nav{
        height: auto;
-       width: 50%;
+       width: 45%;
        display:flex;
-       justify-content:space-evenly;
+       justify-content:space-between;
        align-items: center;
 
         a{  
@@ -43,12 +43,12 @@
 
     .contenedor-redes{
          
-          width: 25%;
+          width: 45%;
           display: flex;
           justify-content: space-around;
 
           .logo-redes{
-                height: 6vh;
+                height: 8vh;
                 width: auto;
                 background-size: cover;
 
@@ -96,7 +96,7 @@
        grid-row: 2/3;
        grid-column:3/5;
        display: flex;
-       justify-content:space-around;
+       justify-content:space-evenly;
        text-align: center;
 
        .logo-redes{
@@ -124,9 +124,9 @@
          font-size: 14px;
       }
    .contenedor-redes{
-          width: 50%;
+          width: 30%;
           display: flex;
-          justify-content: space-evenly;
+          justify-content: space-around;
 
           .logo-redes{
                 height: 6vh;
