@@ -8,7 +8,7 @@
 
     .contenedor-tarjetas{
             height: auto;
-            width: 90%;
+            width: auto;
             margin: 20px auto;
     
             background: linear-gradient( rgba(0, 0, 0, 0.2),
@@ -49,7 +49,6 @@
             .producto6{
                 grid-area: "6";
                 @extend %tarjeta;
-
             }
             .producto7{
                 grid-area: "7";
@@ -85,10 +84,48 @@
         }
 
     }
+
+@include v.tablet{
+    .contenedorMainProductos{
+    height: auto;
+    width: auto;
+    margin: auto;
+
+
+    .contenedor-tarjetas{
+            height: auto;
+            width:auto;
+            margin: 10px auto;
+    
+            background: linear-gradient( rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.6)) ,
+            url(../asset/img/FondoMadera2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+        
+            display: grid;
+            grid-template-areas:
+            "1 2 3 4"
+            "5 6 7 8"
+            "9 10 11 12";
+            justify-content:space-evenly;
+            row-gap: 15px;
+
+            .tarjeta {
+                    height: 55vh;
+                    width: 20vw;
+                 }
+
+        }
+    }
+
+}
+
 @include v.mobile{
 
  .contenedorMainProductos{
-          width: auto;
+          
 
           .contenedor-tarjetas{
                 height: auto;
@@ -124,60 +161,7 @@
 
             }
 
-
     }
-}
-
-@include v.tablet{
-
-     .contenedorMainProductos{
-          width: 95%;
-          margin: 10px 0;
-
-          .contenedor-tarjetas{
-                height: auto;
-                width: 100%;
-                
-                
-                display: grid;
-                grid-template-areas:
-                "1 2"
-                "3 4"
-                "5 6"
-                "7 8"
-                "9 10"
-                "11 12";
-                row-gap: 10px;
-
-               .tarjeta{
-                    height: 65vh;
-                    width: 35vw;
-                    .titulo-tarjeta{
-                        font-size: 14px;
-                    }
-                    .img-tarjeta{
-                        height: 50%;
-                        width:95%;
-                        }
-                    .tarjeta-descripcion{
-                        font-size: 14px;
-                        width: auto;
-
-                    }    
-                }
-
-            }
-
-
-    }
-
-       
-
-
-
-
-
-
 }
 
 

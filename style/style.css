@@ -791,7 +791,7 @@ body {
     height: auto;
     width: 100%;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .main-nosotros .s1-Nosotros .imgNosotros {
     height: auto;
@@ -845,7 +845,7 @@ body {
 }
 .contenedorMainProductos .contenedor-tarjetas {
   height: auto;
-  width: 90%;
+  width: auto;
   margin: 20px auto;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../asset/img/FondoMadera2.jpg);
   background-repeat: no-repeat;
@@ -893,10 +893,31 @@ body {
   grid-area: "12";
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .contenedorMainProductos {
+    height: auto;
     width: auto;
+    margin: auto;
   }
+  .contenedorMainProductos .contenedor-tarjetas {
+    height: auto;
+    width: auto;
+    margin: 10px auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../asset/img/FondoMadera2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    display: grid;
+    grid-template-areas: "1 2 3 4" "5 6 7 8" "9 10 11 12";
+    justify-content: space-evenly;
+    row-gap: 15px;
+  }
+  .contenedorMainProductos .contenedor-tarjetas .tarjeta {
+    height: 55vh;
+    width: 20vw;
+  }
+}
+@media (max-width: 768px) {
   .contenedorMainProductos .contenedor-tarjetas {
     height: auto;
     width: 95%;
@@ -918,34 +939,6 @@ body {
   }
   .contenedorMainProductos .contenedor-tarjetas .tarjeta .tarjeta-descripcion {
     font-size: 12px;
-    width: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-  .contenedorMainProductos {
-    width: 95%;
-    margin: 10px 0;
-  }
-  .contenedorMainProductos .contenedor-tarjetas {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-areas: "1 2" "3 4" "5 6" "7 8" "9 10" "11 12";
-    row-gap: 10px;
-  }
-  .contenedorMainProductos .contenedor-tarjetas .tarjeta {
-    height: 65vh;
-    width: 35vw;
-  }
-  .contenedorMainProductos .contenedor-tarjetas .tarjeta .titulo-tarjeta {
-    font-size: 14px;
-  }
-  .contenedorMainProductos .contenedor-tarjetas .tarjeta .img-tarjeta {
-    height: 50%;
-    width: 95%;
-  }
-  .contenedorMainProductos .contenedor-tarjetas .tarjeta .tarjeta-descripcion {
-    font-size: 14px;
     width: auto;
   }
 }
